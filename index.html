@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title>Lakshya | E-cell of SSN</title>
+    <!-- ========== Favicon Ico ========== -->
+    <link rel="icon" href="fav.ico">
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+    #overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 132, 0);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*font-size: 50px;*/
+  color: rgb(255, 132, 0);
+  font-size: 20px;
+  font-weight: 300;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+    @media only screen and (orientation: portrait) {
+    .shrink{
+        font-size:16px;
+    }
+
+}
+.hide {
+    opacity: 1;
+    animation: fade 2s linear;
+}
+
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+</style>
+</head>
+<body>
+
+   
+
+<div class="loader">
+    <div class="loader-outter"></div>
+    <div class="loader-inner"></div>
+</div>
+<div>
+<!--header start here -->
+<header class="header navbar fixed-top navbar-expand-md">
+    <div class="container">
+        <a class="navbar-brand logo" href="#">
+            <img src="assets/img/lak_logo.png" alt="Lakshya"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-text-align-right"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+            <ul class=" nav navbar-nav menu">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html#tas">Social Entrepreneurship</a>
+                </li>
+                    <li class="nav-item">
+                    <a class="nav-link " onClick="window.location.reload();return false;" href="index.html#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="mou.html">MoU</a>
+                </li>
+                
+            <li class="nav-item">
+                    <a class="nav-link " href="activities.html">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="impact.html">Impact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html#contact">Contact</a>
+                </li>
+              <!--   <li class="search_btn">
+                    <a  href="#">
+                       <i class="ion-ios-search"></i>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</header>
+<!--header end here-->
+
+<!--cover section slider -->
+<section id="home" class="home-cover">
+    <div class="cover_slider owl-carousel owl-theme">
+        <div class="cover_item" id="slide1" style="background: url('assets/img/bg/cover.jpg');">
+             <div class="slider_content">
+                <div class="slider-content-inner">
+                    <div class="container">
+                        <div class="slider-content-center">
+                            <h2 class="cover-title">
+                                
+                            </h2>
+                            <strong class="cover-xl-text" style="font-size:38px;">SSN Lakshya </strong>
+                            <p class="cover-date">
+                                E-cell of SSN                            </p>
+                          <!--   <a href="#" class=" btn btn-primary btn-rounded" >
+                                Buy Tickets Now
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cover_item" id="slide2" style="background: url('assets/img/bg/cover.jpg');">
+            <div class="slider_content">
+                <div class="slider-content-inner">
+                    <div class="container">
+                        <div class="slider-content-left">
+                            <h2 class="cover-title">
+                                Chance to get in Lakshya
+                            </h2>
+                            <strong class="cover-xl-text" style="font-size:35px;">MEMBERSHIP<br/> DRIVE </strong>
+                           <!--  <p class="cover-date">
+                                12-14 February 2018  - Los Angeles, CA.
+                            </p> -->
+                            <a href="#" class=" btn btn-primary btn-rounded" >
+                                Register
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="cover_nav">
+        <ul class="cover_dots" style="cursor: pointer;">
+        <li class="active" data="0"><span><a href="#slide1">1</a></span></li>
+               <li  data="1"><span><a href="#slide2">2</a></span></li>
+            <!-- <li  data="2"><span>3</span></li> -->
+        </ul>
+    </div>
+</section>
+
+
+<!--about the event -->
+<section class="pt100 pb100">
+    <div class="container">
+        <div class="section_title">
+            <h3 class="title" style="font-size:25px;">
+                About Us
+            </h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-8">
+                <p align="justify">
+                   The SSN Entrepreneurship Development Cell “Lakshya” was formed a few years ago with a handful of enthusiasts and has evolved over its short lifespan into a powerful student body that boasts of 700+ members, all of whom are active participants in various entrepreneurial activities undertaken by Lakshya. Lakshya has always aimed at celebrating the evergreen spirit of entrepreneurship by conducting a plethora of events that kindles the entrepreneurial spirit within students. Ever since its inception it has had a profound impact on the lives and thinking of the “Young India”. Our E-cell lifted the prestigious E-week India trophy during the years 2010 and 2011 under the guidance of the National Entrepreneurship Network (NEN), a Dr. Romesh Wadhwani foundation, and were adjudged runners-up for the same during the years 2012 and 2013.
+                   <br/>
+                   <br/>
+                   <br/>
+                </p>
+            </div>
+        </div>
+        <div class="section_title">
+            <h3 class="title" style="font-size:25px;">
+               HOW DO I CONTRIBUTE
+            </h3>
+        </div>
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-8">
+                <p align="justify" style="width=100%"> 
+
+Students can contribute in several ways, by volunteering for events and social cause, helping the EDC acquire sponsors, prepare posters, be part of publicity team, etc. Also get in touch with other existing members to know more. You could start off by registering here with your contact details to be notified incase of any updates/events.
+                </p>
+            </div>
+        </div>
+</div></section>
+<!--events section -->
+<section class="pt100 pb100" id="tas" style="margin-top:-150px">
+    <div class="container">
+
+        <div class="event_box">
+            <div class="event_info">
+                <div class="event_title" style="font-size:25px;">
+                    Social Entrepreneurship
+                </div>
+                <div class="speaker">
+                   Teach A School(TAS) is a year long social entrepreneurship event.
+                </div>
+            </div>
+            <img src="assets/img/bg/tascover.jpg" alt="event">
+
+            <div class="event_word" style="padding-top:25px">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-12">
+                     <strong>What do we do?</strong> <br/>
+                        Volunteers from our college of all years and departments who are a part of Teach a school program contribute by providing mentorship to middle school students (6th-8th) from government schools across the city.<br/><br/>
+                     <strong> How do we do it?</strong> <br/>
+                        English and mathematics are taught in an engaging and fun manner. Our volunteers organise interesting activities and prepare worksheets to teach concepts by captivating the attention of the students.<br/><br/>
+                    </div>
+                    <div class="col-md-6 col-12">
+                       <strong>Who do we work with?</strong> <br/>
+                       We take in government schools which are open to our help under the TAS umbrella every year. We have been associated with schools like Tiruporur Government school, Eechangadu Government School, Nandanam Higher Secondary School, Olcott Memorial School and Lady Sivasami Girls Higher Secondary School and associations like Tribal Hearts Foundation.<br/><br/>
+                        <strong>How do I join?</strong> <br/>
+                        Students who would like to experience the joy of teaching and giving back to society are welcome to join the TAS family. Registrations are open at the beginning of each semester. Any interested student of SSN can register with TAS by either using the link in the website or the one on our Instagram/facebook handles.
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="readmore_btn">read more</a> -->
+        </div>
+</div>
+</section>
+
+
+
+
+<!--Price section-->
+<section class="pb100" id="events" style="margin-top: -50px">
+    <div class="container">
+        <div class="section_title mb50">
+            <h3 class="title">
+                EVENTS
+            </h3>
+        </div>
+
+        <div class="row justify-content-center">
+          
+            <div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_header">
+                        <h4>
+                            Teach a school
+                        </h4>
+                        <h6>
+                            Social Entrepreneurship
+                        </h6>
+                    </div>
+
+                        <img src="assets/img/events/tas.jpg" height="200px">
+                
+                    <div class="price_footer">
+                        <a href="#tas" class="btn btn-primary btn-rounded">Read more</a>
+                    </div>
+                </div>
+            </div>
+ <div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_header">
+                        <h4>
+                            SYcon
+                        </h4>
+                        <h6>
+                            Creating leaders. Inspiring change.
+                        </h6>
+                    </div>
+
+                        <img src="assets/img/events/sycon.jpg" height="200px">
+                
+                    <div class="price_footer">
+                        <a href="events_sycon.html" class="btn btn-primary btn-rounded">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_header">
+                        <h4>
+                            Marketize
+                        </h4>
+                        <h6>
+                           Innovate Ideate Ignite
+                        </h6>
+                    </div>
+
+                        <img src="assets/img/events/marketize.jpg" width="100%" height="200px">
+                
+                    <div class="price_footer">
+                        <a href="events_marketize.html" class="btn btn-primary btn-rounded">Read more</a>
+                    </div>
+                </div>
+            </div>
+           
+<div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_header">
+                        <h4>
+                            crazy Bazaar
+                        </h4>
+                        <h6>
+                             crazy Bazaar
+                        </h6>
+                    </div>
+
+                        <img src="assets/img/events/crazy_logo.jpg" width="100%" height="200px">
+                
+                    <div class="price_footer">
+                        <a href="events_crazybazaar.html" class="btn btn-primary btn-rounded">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+<div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_header">
+                        <h4>
+                            Internship Drive
+                        </h4>
+                        <h6>
+                           Multiple streamlined Internship
+                        </h6>
+                    </div>
+
+                        <img src="assets/img/events/internship.jpg" width="100%" height="200px">
+                
+                    <div class="price_footer">
+                        <a href="events_internship.html" class="btn btn-primary btn-rounded">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_header">
+                        <h4>
+                            Mela
+                        </h4>
+                        <h6>
+                           Fun and action
+                        </h6>
+                    </div>
+
+                        <img src="assets/img/events/mela.png" width="100%" height="200px">
+                
+                    <div class="price_footer">
+                        <a href="events_mela.html" class="btn btn-primary btn-rounded">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+<div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_header">
+                        <h4>
+                            Vuja de
+                        </h4>
+                        <h6>
+                           Ultimate treasure hunt
+                        </h6>
+                    </div>
+
+                        <img src="assets/img/events/vujade.jpg" width="100%" height="200px">
+                
+                    <div class="price_footer">
+                        <a href="events_vujade.html" class="btn btn-primary btn-rounded">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_header">
+                        <h4>
+                            Udaan
+                        </h4>
+                        <h6>
+                           Experience being an entrepreneur
+                        </h6>
+                    </div>
+
+                        <img src="assets/img/events/udaan.jpg" width="100%" height="200px">
+                
+                    <div class="price_footer">
+                        <a href="events_udaan.html" class="btn btn-primary btn-rounded">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-12">
+                <div class="price_box active">
+                    <div class="price_header">
+                        <h4>
+                            32hr startup challenge
+                        </h4>
+                        <h6>
+                          Thinking and acting in terms of experimentation
+                        </h6>
+                    </div>
+
+                        <img src="assets/img/events/32hourstartup.jpg" width="100%" height="182px">
+                
+                    <div class="price_footer">
+                        <a href="events_32hrstartup.html" class="btn btn-primary btn-rounded">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--price section end -->
+
+
+<!--speaker section-->
+<section class="pb100" id="contact">
+    <div class="container">
+        <div class="section_title mb50">
+            <h3 class="title">
+               Our Team
+            </h3>
+        </div>
+    </div>
+    <div class="row justify-content-center no-gutters">
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/core/1.jpg" alt="..">
+                    <div class="info_box">
+                        <h5 class="name">Ravi Raj</h5>
+                        <p class="position">72990 56655</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/core/2.jpg" alt="..">
+                    <div class="info_box">
+                        <h5 class="name">Bharath</h5>
+                        <p class="position">98406 27838</p>
+                    </div>
+                </div>
+            </div>
+        </div>     
+         <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/core/4.jpg" alt="..">
+                    <div class="info_box">
+                        <h5 class="name">Jagdesh</h5>
+                        <p class="position">73587 29757</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/core/3.jpg" alt="..">
+                    <div class="info_box">
+                        <h5 class="name">Mohammed Rizwan</h5>
+                        <p class="position">94449 43440</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+             <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/core/6.jpg" alt="..">
+                    <div class="info_box">
+                        <h5 class="name">Kirthana</h5>
+                        <p class="position">90257 33496</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/core/7.jpg" alt="..">
+                    <div class="info_box">
+                        <h5 class="name">Akshay</h5>
+                        <p class="position">99529 76083</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/core/8.jpg" alt="..">
+                    <div class="info_box">
+                        <h5 class="name">Murugappan</h5>
+                        <p class="position">80568 14513</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/core/5.jpg" alt="..">
+                    <div class="info_box">
+                        <h5 class="name">Varun Vaidyanathan</h5>
+                        <p class="position">90034 97675</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--speaker section end -->
+</div>
+
+<!--footer-->
+<div class="copyright_footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-12">
+                <p style="color:black"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end -->
+
+<!-- jquery -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<!--slick carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!--parallax -->
+<script src="assets/js/parallax.min.js"></script>
+<!--Counter up -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--Counter down -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- WOW JS -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Custom js -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
